@@ -1,12 +1,18 @@
 Package: exif
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Read EXIF Metadata from JPEGs
+Version: 0.1.0
 Date: 2015-05-03
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Oliver Keyes [aut, cre], Penelope Hopkins [ctb], Robyn Temple-Wood [ctb], Mayank Lahiri [cph]
+Maintainer: Oliver Keyes <ironholds@gmail.com>
+Description: Extracts Exchangeable Image File Format (EXIF) metadata, such as camera make and model, ISO speed and the date-time
+             the picture was taken on, from JPEG images. Incorporates the 'easyexif' (https://github.com/mayanklahiri/easyexif)
+             library.
+License: BSD_2_clause + file LICENSE
+Copyright: Mayank Lahiri for 'easyexif', Oliver Keyes for the integration with R, and Penelope Hopkins and Robyn Temple-Wood for
+           the included test images (which are licensed CC-BY 4.0).
 Suggests: testthat
 LinkingTo: Rcpp
 Imports: Rcpp
+URL: https://github.com/Ironholds/exif
+BugReports: https://github.com/Ironholds/exif/issues

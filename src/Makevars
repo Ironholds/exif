@@ -1,1 +1,1 @@
-PKG_LIBS = -lexif
+CXX_STD = CXX11

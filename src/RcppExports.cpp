@@ -6,13 +6,13 @@
 using namespace Rcpp;
 
 // read_exif
-List read_exif(std::vector < std::string > filenames);
-RcppExport SEXP exif_read_exif(SEXP filenamesSEXP) {
+DataFrame read_exif(std::vector < std::string > files);
+RcppExport SEXP exif_read_exif(SEXP filesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< std::vector < std::string > >::type filenames(filenamesSEXP);
-    __result = Rcpp::wrap(read_exif(filenames));
+    Rcpp::traits::input_parameter< std::vector < std::string > >::type files(filesSEXP);
+    __result = Rcpp::wrap(read_exif(files));
     return __result;
 END_RCPP
 }
