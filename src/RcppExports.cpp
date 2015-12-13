@@ -5,14 +5,14 @@
 
 using namespace Rcpp;
 
-// read_exif
-DataFrame read_exif(std::vector < std::string > files);
-RcppExport SEXP exif_read_exif(SEXP filesSEXP) {
+// read_exif_
+DataFrame read_exif_(std::vector < std::string > files);
+RcppExport SEXP exif_read_exif_(SEXP filesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
     Rcpp::traits::input_parameter< std::vector < std::string > >::type files(filesSEXP);
-    __result = Rcpp::wrap(read_exif(files));
+    __result = Rcpp::wrap(read_exif_(files));
     return __result;
 END_RCPP
 }

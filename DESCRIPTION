@@ -16,3 +16,4 @@ LinkingTo: Rcpp
 Imports: Rcpp
 URL: https://github.com/Ironholds/exif
 BugReports: https://github.com/Ironholds/exif/issues
+SystemRequirements: C++11

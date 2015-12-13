@@ -35,7 +35,7 @@ easyexif::EXIFInfo read_exif_single(std::string file){
 }
 
 //[[Rcpp::export]]
-DataFrame read_exif(std::vector < std::string > files){
+DataFrame read_exif_(std::vector < std::string > files){
   
   // Output cols. This is gonna be ~~ugly~~
   unsigned int input_size = files.size();
