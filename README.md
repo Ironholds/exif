@@ -1,7 +1,7 @@
 ##exif
 A package for reading EXIF metadata into R
 
-![downloads](http://cranlogs.r-pkg.org/badges/grand-total/urltools)
+![downloads](http://cranlogs.r-pkg.org/badges/grand-total/exif)
 
 ### Description
 EXIF metadata provides information about the nature of a JPEG image (usually a photograph) including camera make
