@@ -1,4 +1,4 @@
-##urltools
+##exif
 A package for reading EXIF metadata into R
 
 ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/urltools)
