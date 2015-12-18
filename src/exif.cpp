@@ -40,12 +40,12 @@ using std::string;
 namespace {
 
   struct Rational {
-    uint32_t numerator, denominator;
+    unsigned int numerator, denominator;
     operator double() const {
       if (denominator < 1e-20) {
         return 0;
       }
-      return static_cast<double>(numerator) / static_cast<double>(denominator);
+      return ((double) numerator / (double) denominator);
     }
   };
 
@@ -149,11 +149,9 @@ namespace {
     }
   private:
     // Raw fields
-    unsigned short tag_;
-    unsigned short format_;
-    unsigned data_;
-    unsigned length_;
-    
+    unsigned short tag_, format_;
+    unsigned int data_, length_;
+
     // Parsed fields
     union {
       byte_vector * val_byte_;
