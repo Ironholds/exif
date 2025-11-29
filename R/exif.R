@@ -6,9 +6,8 @@
 #' @useDynLib exif
 #' @importFrom Rcpp sourceCpp
 #' @seealso \code{\link{read_exif}}
-#' @docType package
 #' @aliases exif exif-package
-NULL
+"_PACKAGE"
 
 #'@title Read EXIF Metadata
 #'@description \code{read_exif} reads EXIF metadata from JPEG files,

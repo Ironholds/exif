@@ -5,6 +5,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // read_exif_
 DataFrame read_exif_(std::vector < std::string > files);
 RcppExport SEXP _exif_read_exif_(SEXP filesSEXP) {
@@ -17,11 +22,8 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP exif_read_exif_(SEXP);
-
 static const R_CallMethodDef CallEntries[] = {
     {"_exif_read_exif_", (DL_FUNC) &_exif_read_exif_, 1},
-    {"exif_read_exif_", (DL_FUNC) &exif_read_exif_, 1},
     {NULL, NULL, 0}
 };
 

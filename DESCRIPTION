@@ -1,19 +1,31 @@
 Package: exif
 Type: Package
 Title: Read EXIF Metadata from JPEGs
-Version: 0.1.0
-Date: 2015-05-03
-Author: Oliver Keyes [aut, cre], Penelope Hopkins [ctb], Robyn Temple-Wood [ctb], Mayank Lahiri [cph]
-Maintainer: Oliver Keyes <ironholds@gmail.com>
+Version: 0.1.1
+Date: 2025-11-28
+Authors@R: c(person(given = "Os",
+                      family = "Keyes",
+                      role = c("aut", "cre"),
+                      email = "ironholds@gmail.com"),
+               person(given = "Penelope",
+                      family = "Hopkins",
+                      role = "ctb"),
+               person(given = "Robyn",
+                      family = "Temple-Wood",
+                      role = "ctb"),
+               person(given = "Mayank",
+                      family = "Lahiri",
+                      role = "cph"))
+Maintainer: Os Keyes <ironholds@gmail.com>
 Description: Extracts Exchangeable Image File Format (EXIF) metadata, such as camera make and model, ISO speed and the date-time
-             the picture was taken on, from JPEG images. Incorporates the 'easyexif' (https://github.com/mayanklahiri/easyexif)
+             the picture was taken on, from JPEG images. Incorporates the 'easyexif' <https://github.com/mayanklahiri/easyexif>
              library.
 License: BSD_2_clause + file LICENSE
-Copyright: Mayank Lahiri for 'easyexif', Oliver Keyes for the integration with R, and Penelope Hopkins and Robyn Temple-Wood for
+Copyright: Mayank Lahiri for 'easyexif', Os Keyes for the integration with R, and Penelope Hopkins and Robyn Temple-Wood for
            the included test images (which are licensed CC-BY 4.0).
 Suggests: testthat
 LinkingTo: Rcpp
 Imports: Rcpp
 URL: https://github.com/Ironholds/exif
 BugReports: https://github.com/Ironholds/exif/issues
-SystemRequirements: C++11
+RoxygenNote: 7.3.3
