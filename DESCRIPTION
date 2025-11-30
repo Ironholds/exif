@@ -2,7 +2,7 @@ Package: exif
 Type: Package
 Title: Read EXIF Metadata from JPEGs
 Version: 0.1.1
-Date: 2025-11-28
+Date: 2025-11-30
 Authors@R: c(person(given = "Os",
                       family = "Keyes",
                       role = c("aut", "cre"),
@@ -26,6 +26,7 @@ Copyright: Mayank Lahiri for 'easyexif', Os Keyes for the integration with R, an
 Suggests: testthat
 LinkingTo: Rcpp
 Imports: Rcpp
+Encoding: UTF-8
 URL: https://github.com/Ironholds/exif
 BugReports: https://github.com/Ironholds/exif/issues
 RoxygenNote: 7.3.3
